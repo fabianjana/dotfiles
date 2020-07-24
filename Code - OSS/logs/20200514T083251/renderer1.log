@@ -1,4 +1,0 @@
-[2020-05-14 08:38:03.506] [renderer1] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/etc/oblogout.conf'
-[2020-05-14 08:38:03.506] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/etc/oblogout.conf'
-[2020-05-14 08:38:09.725] [renderer1] [error] Unable to read file '/etc/oblogout.conf' (Error: Unable to resolve non-existing file '/etc/oblogout.conf'): Error: Unable to read file '/etc/oblogout.conf' (Error: Unable to resolve non-existing file '/etc/oblogout.conf')
-    at e.doReadAsFileStream (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1635:7)
