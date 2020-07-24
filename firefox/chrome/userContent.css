@@ -1,0 +1,191 @@
+:root {
+    --nord0: #2E3440;
+    --nord1: #3B4252;
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+    --nord7: #8FBCBB;
+    --nord8: #88C0D0;
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+}
+
+@-moz-document url("about:home"), url("about:newtab") {
+    .activity-stream {
+        background-color: #2E3440 !important;
+    }
+    #newtab-search-text {
+        background-color: #434C5E !important;
+        color: #D8DEE9 !important;
+        border: 1px solid #434C5E !important;
+    }
+    .search-wrapper:active input, .search-wrapper input:focus {
+        border-color: white !important;
+        box-shadow: none !important;
+    }
+}
+
+@-moz-document url("about:blank") {
+    *:empty:not([id]):not([style]) {
+        background-color: #2E3440 !important;
+    }
+}
+
+
+@-moz-document url-prefix("about:") {
+    :root {
+        --in-content-page-background: #2E3440 !important;
+        --in-content-box-border-color: #434C5E !important;
+        --in-content-box-background: #434C5E !important;
+        --in-content-border-active: #88C0D0 !important;
+        --in-content-border-active-shadow: transparent !important;
+        --in-content-category-text-selected: #88C0D0 !important;
+        --in-content-item-selected: #88C0D0 !important;
+        --in-content-border-highlight: #88C0D0 !important;
+        --in-content-border-focus: #88C0D0 !important;
+        --in-content-category-background-selected-hover: #434C5E !important;
+        --in-content-category-text-selected-active: #88C0D0 !important;
+        --in-content-category-background-selected-active: #4C566A !important;
+        --in-content-category-background-hover: #434C5E !important;
+        --in-content-primary-button-background: #4C566A !important;
+        --in-content-primary-button-background-hover: #434C5E !important;
+        --in-content-primary-button-background-active: #3B4252 !important;
+        --in-content-button-background: #434C5E !important;
+        --in-content-button-background-hover: #4C566A !important;
+        --in-content-button-background-active: #3B4252 !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --in-content-page-background: #2E3440 !important;
+        --in-content-box-border-color: #434C5E !important;
+        --in-content-box-background: #434C5E !important;
+        --in-content-border-active: #88C0D0 !important;
+        --in-content-border-active-shadow: transparent !important;
+        --in-content-category-text-selected: #88C0D0 !important;
+        --in-content-item-selected: #88C0D0 !important;
+        --in-content-border-highlight: #88C0D0 !important;
+        --in-content-border-focus: #88C0D0 !important;
+        --in-content-category-background-selected-hover: #434C5E !important;
+        --in-content-category-text-selected-active: #88C0D0 !important;
+        --in-content-category-background-selected-active: #4C566A !important;
+        --in-content-category-background-hover: #434C5E !important;
+        --in-content-primary-button-background: #4C566A !important;
+        --in-content-primary-button-background-hover: #434C5E !important;
+        --in-content-primary-button-background-active: #3B4252 !important;
+        --in-content-button-background: #434C5E !important;
+        --in-content-button-background-hover: #4C566A !important;
+        --in-content-button-background-active: #3B4252 !important;
+    }
+}
+
+
+/*================= DEVTOOLS =================*/
+:root.theme-dark {
+    --theme-body-background: var(--nord0) !important;
+    --theme-sidebar-background: var(--nord0) !important;
+    --theme-tab-toolbar-background: var(--nord0) !important;
+    --theme-toolbar-background: var(--nord0) !important;
+    --theme-toolbar-color: var(--grey-40);
+    --theme-toolbar-selected-color: white;
+    --theme-toolbar-highlighted-color: var(--green-50);
+    --theme-toolbar-background-hover: #232327;
+    --theme-toolbar-background-alt: var(--grey-85);
+    --theme-toolbar-hover: var(--nord1) !important;
+    --theme-toolbar-hover-active: var(--nord2) !important;
+    --theme-toolbar-separator: var(--nord3) !important;
+    --toolbarbutton-background: var(--nord1) !important;
+    --toolbarbutton-hover-background: var(--nord2) !important;
+    --toolbarbutton-focus-background: var(--nord3) !important;
+    --toolbarbutton-focus-color: var(--grey-30);
+    --toolbarbutton-checked-background: #204e8a;
+    --toolbarbutton-checked-focus-background: var(--blue-60);
+    --toolbarbutton-checked-color: #ffffff;
+    --theme-button-background: rgba(249, 249, 250, 0.1);
+    --theme-button-active-background: rgba(249, 249, 250, 0.15);
+    --theme-accordion-header-background: var(--nord1) !important;
+    --theme-accordion-header-hover: var(--nord2) !important;
+    --theme-selection-background: var(--nord2) !important;
+    --theme-selection-background-hover: var(--nord1) !important;
+    --theme-selection-focus-background: var(--nord2) !important;
+    --theme-selection-color: var(--nord6) !important;
+    --theme-splitter-color: var(--nord2) !important;
+    --theme-emphasized-splitter-color: var(--grey-60);
+    --theme-emphasized-splitter-color-hover: var(--grey-50);
+    --theme-icon-color: rgba(249, 249, 250, 0.7);
+    --theme-icon-dimmed-color: rgba(147, 147, 149, 0.9);
+    --theme-icon-checked-color: var(--blue-30);
+    --theme-icon-error-color: var(--red-40);
+    --theme-icon-warning-color: var(--yellow-60);
+    --theme-comment: #6f7787 !important;
+    --theme-body-color: var(--grey-40) !;
+    --theme-text-color-alt: var(--grey-45);
+    --theme-text-color-inactive: var(--grey-50);
+    --theme-text-color-strong: var(--grey-30);
+    --theme-highlight-green: #86de74;
+    --theme-highlight-blue: #75bfff;
+    --theme-highlight-purple: #b98eff;
+    --theme-highlight-red: #ff7de9;
+    --theme-highlight-yellow: #fff89e;
+    --theme-highlight-bluegrey: #5e88b0;
+    --theme-highlight-lightorange: #d99b28;
+    --theme-highlight-orange: #d96629;
+    --theme-highlight-pink: #df80ff;
+    --theme-highlight-gray: #e9f4fe;
+    --theme-focus-outline-color: #ced3d9;
+    --theme-graphs-green: #70bf53;
+    --theme-graphs-blue: #46afe3;
+    --theme-graphs-bluegrey: #5e88b0;
+    --theme-graphs-purple: #df80ff;
+    --theme-graphs-yellow: #d99b28;
+    --theme-graphs-orange: #d96629;
+    --theme-graphs-red: #eb5368;
+    --theme-graphs-grey: #757873;
+    --theme-graphs-full-red: #f00;
+    --theme-graphs-full-blue: #00f;
+    --theme-popup-background: var(--grey-60);
+    --theme-popup-color: rgb(249, 249, 250);
+    --theme-popup-border-color: #27272b;
+    --theme-popup-dimmed: rgba(249, 249, 250, 0.1);
+    --theme-toolbarbutton-background: none;
+    --theme-toolbarbutton-color: var(--grey-40);
+    --theme-toolbarbutton-hover-background: var(--grey-10-a15);
+    --theme-toolbarbutton-checked-background: var(--grey-10-a20);
+    --theme-toolbarbutton-checked-color: var(--grey-30);
+    --theme-toolbarbutton-checked-hover-background: var(--grey-10-a25);
+    --theme-toolbarbutton-checked-hover-color: var(--grey-30);
+    --theme-toolbarbutton-active-background: var(--grey-10-a30);
+    --theme-toolbarbutton-active-color: var(--grey-30);
+    --theme-warning-background: hsl(42, 37%, 19%);
+    --theme-warning-border: hsl(60, 30%, 26%);
+    --theme-warning-color: hsl(43, 94%, 81%);
+    --theme-contrast-background: #4f4b1f;
+    --theme-contrast-background-alpha: rgba(255, 233, 0, 0.15);
+    --theme-contrast-color: white;
+    --theme-contrast-border: var(--yellow-65);
+}
+
+:root.theme-dark {
+    --rule-highlight-background-color: #521C76;
+    --rule-header-background-color: var(--nord1) !important;
+    --rule-pseudo-class-text-color: var(--yellow-50);
+    --rule-unused-name-text-color: var(--grey-45);
+    --rule-unused-value-text-color: #787878;
+    --rule-overridden-name-text-color: var(--grey-45);
+    --rule-overridden-value-text-color: #787878;
+    
+    --tab-line-selected-color: transparent !important;
+    --tab-line-hover-color: transparent !important;
+}
+
+.devtools-tab.selected {
+    background-color: var(--nord2) !important;
+}

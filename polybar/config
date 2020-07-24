@@ -1,0 +1,70 @@
+include-file = ~/.config/polybar/nord.ini
+include-file = ~/.config/polybar/settings.ini
+include-file = ~/.config/polybar/xworkspaces.ini
+include-file = ~/.config/polybar/xwindow.ini
+include-file = ~/.config/polybar/pulseaudio.ini
+include-file = ~/.config/polybar/date.ini
+include-file = ~/.config/polybar/memory.ini
+
+[section/base]
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = FiraCode:weight=150:size=9;3
+font-1 = FontAwesome5Free:style=Solid:size=10;2
+font-2 = FontAwesome5Free:style=Regular:size=10;2
+font-3 = FontAwesome5Brands:style=Regular:size=10;2
+font-4 = FiraSansCondensed:weight=150:size=10;3
+
+wm-restack = bspwm
+
+[bar/main]
+inherit = section/base
+width = 100%:-0
+height = 26
+
+
+border-bottom-size = 0
+border-color = ${colors.color1}
+
+offset-x = 0
+offset-y = 0
+
+
+modules-left = bspwm
+modules-center = title
+modules-right = pulseaudio memory date
+
+; Position of the system tray window
+; If empty or undefined, tray support will be disabled
+; NOTE: A center aligned tray will cover center aligned modules
+;
+; Available positions:
+;   left
+;   center
+;   right
+;   none
+tray-position =  right
+
+; If true, the bar will not shift its
+; contents when the tray changes
+tray-detached = false
+
+; Tray icon max size
+tray-maxsize = 16
+
+; Background color for the tray container 
+; ARGB color (e.g. #f00, #ff992a, #ddff1023)
+; By default the tray container will use the bar
+; background color.
+tray-background = ${colors.background}
+
+; Tray offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
+tray-offset-x = 0
+tray-offset-y = 0
+
+; Pad the sides of each tray icon
+tray-padding = 4
+
+; Scale factor for tray clients
+tray-scale = 1.0
